@@ -1,2 +1,1 @@
-# Shaquib_INBT0665_july2023
-ineubytes web development projects
+https://shaquib150323.github.io/Shaquib_INBT0665_july2023/
