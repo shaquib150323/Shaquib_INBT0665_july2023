@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>my portfolio</title>
+ <!-- font awesome js script -->
+ <script src="https://kit.fontawesome.com/3043f74c25.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ <div id="header">
+  <div class="container">
+   <nav>
+    <img src="images/salaam.png" class="logo" alt="my name logo">
+    <ul id="sidemenu">
+     <!-- a tag for clickable link -->
+     <li><a href="#header">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <i class="fa-solid fa-xmark fa-fade"onclick ="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars fa-fade" onclick="openmenu()"></i>
+   </nav>
+   <div class="header-text">
+    <p>Front-End Web Developer <span>|</span> UI / UX <span>|</span><br> Java App Developer</p>
+    <h1>Hi, i'm <span>Shaquib</span> Hussain <br> from India.</h1>
+   </div>
+  </div>
+ </div>
+ <!-- ------------------------------about section starts here------------------------- -->
+ <div id="about">
+  <div class="container">
+   <div class="row">
+    <div class="about_column_1">
+     <img src="images/user me.png" alt="my user image" class="user">
+    </div>
+    <div class="about_column_2">
+     <h1 class="sub_title">About Me</h1><br>
+     <p>Welcome to my portfolio website! I'm a passionate front-end web developer dedicated to crafting exceptional online experiences. With a keen eye for design and a love for coding, I bring websites to life that seamlessly blend functionality and aesthetics. My goal is to create user-friendly interfaces that captivate and engage visitors, while ensuring a smooth and intuitive browsing experience. Let's collaborate and bring your digital visions to reality. Together, we'll build a web presence that leaves a lasting impression. Thank you for visiting, and have a marvellous day. Feel free to connect with me by filling the newsletter signup provided in the contact section below.</p>
+
+     <div class="tab_titles">
+      <!-- onclick event adding  -->
+      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+      <p class="tab-links" onclick="opentab('education')">Education</p>
+     </div>
+     <div class="tab-contents active-tab" id="skills">
+      <ul>
+       <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+       <li><span>Web Development</span><br>Designing front/back end of websites</li>
+       <li><span>App Development</span><br>Building Android apps with Java</li>
+       <!-- skills************************************************************** icons -->
+       <i class="fa-brands fa-html5 fa-flip"></i>
+       <i class="fa-brands fa-css3 fa-flip"></i>
+       <i class="fa-brands fa-square-js fa-flip"></i>
+       <i class="fa-solid fa-c fa-flip"></i>
+       <i class="fa-brands fa-java fa-flip"></i>
+       <i class="fa-brands fa-github fa-flip"></i>
+       <i class="fa-brands fa-bootstrap fa-flip"></i>
+       <i class="fa-brands fa-figma fa-flip"></i>
+       
+      </ul>
+     </div>
+     <div class="tab-contents" id="experience">
+      <ul>
+       <li><span>Internship</span><br>Web Development intern at iNeuBytes</li>
+       <li><span>Self Learning </span><br>Online learning through <br> Youtube,Coursera and Devtown.</li>
+      </ul>
+     </div>
+     <div class="tab-contents" id="education">
+      <ul>
+       <li><span>Post-Graduation (2022-Current)</span><br>M.C.A. <br> Kamla Nehru Institute of
+        Technology,Sultanpur </li>
+       <li><span>Graduation (2019-2022)</span><br>B.Sc. (Hons.) Physics <br> Aligarh Muslim
+        University,Aligarh </li>
+       <li><span>Intermediate (2019)</span><br>St.Thomas Sr. Sec. School,Mainpuri (ISC)</li>
+       <li><span>High-School (2017)</span><br>St.Thomas Sr. Sec. School,Mainpuri (ICSE)</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!------------------------ services section ------------------------ -->
+ <div id="services">
+  <div class="container">
+   <h1 class="sub_title">My Services</h1><br>
+   <div class="services-list">
+    <div>
+     <i class="fa-solid fa-code fa-beat-fade fa-lg"></i>
+     <h2>Web Design</h2>
+     <p>Crafting visually stunning and engaging websites that leave a lasting impact. Seamlessly blending aesthetics and user experience, I bring your digital vision to life. Let's redefine your online presence together.</p><br>
+     <a href="#">Learn more</a>
+    </div>
+    <div>
+     <i class="fa-solid fa-crop-simple fa-flip fa-lg"></i>
+     <h2>UI/UX Design</h2>
+     <p>I specialize in crafting immersive interfaces and seamless user experiences. By blending striking visuals and intuitive functionality, I create digital products that captivate and engage. Let's collaborate to redefine how your audience interacts with your brand.</p><br>
+     <a href="#">Learn more</a>
+    </div>
+    <div>
+     <i class="fa-brands fa-android fa-shake fa-lg"></i>
+     <h2>App Design</h2>
+     <p>Crafting engaging and intuitive mobile applications that captivate users. Let's collaborate to bring your app vision to life and shape remarkable digital experiences.</p><br>
+     <a href="#">Learn more</a>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- ----------------portfolio-------------- -->
+ <div id="portfolio">
+  <div class="container">
+   <h1 class="sub_title">My Work</h1>
+   <div class="work-list">
+    <div class="work">
+     <img src="images/work-1.png" alt="work 1">
+     <div class="layer">
+      <h3>Weather App</h3>
+      <p>Stay updated with the weather conditions with Climacast weather app.</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+     </div>
+    </div>
+    <div class="work">
+     <img src="images/work-2.png" alt="work 2">
+     <div class="layer">
+      <h3>Music App</h3>
+      <p>Listen to the greatest songs of all time.Check out now.</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+     </div>
+    </div>
+    <div class="work">
+     <img src="images/work-3.png" alt="work 3">
+     <div class="layer">
+      <h3>Online Shopping App</h3>
+      <p>Get all your needs fulfilled on your fingertips. </p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+     </div>
+    </div>
+   </div>
+   <a href="#" class="btn">See more</a>
+  </div>
+ </div>
+ <!-- -----------------------contact--------------------- -->
+<div id="contact">
+ <div class="container">
+  <div class="row">
+   <div class="contact-left">
+    <h1 class="sub_title">Contact me</h1>
+    <p><i class="fa-regular fa-envelope-open fa-shake"></i>shaquibhussain2001@gmail.com</p>
+    <p><i class="fa-solid fa-mobile fa-shake"></i>(+91)8533914510</p>
+    <div class="social-icons">
+     <a href="https://www.facebook.com/profile.php?id=100035740252968&mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook"></i></a>
+     <a href="https://instagram.com/shaquibhussainofficial?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-square-instagram"></i></a>
+     <a href="https://twitter.com/Shaquib_30922?t=Inhhb1TI9kJRH_YevtRSAQ&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+     <a href="https://www.linkedin.com/in/shaquib-hussain-a63aa6213"><i class="fa-brands fa-linkedin"></i></a>
+
+    </div>
+    <a href="images/my-cv.pdf" download class="btn btn2">Download C.V.</a>
+   </div>
+   <div class="contact-right">
+    <form name="submit-to-google-sheet" >
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your E-mail" required>
+     <textarea name="Message" rows="6" placeholder="Your Message :)"></textarea>
+     <button type="submit" class="btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+   </div>
+  </div>
+ </div>
+ <div class="copyright">
+    <p>
+         Made with  <i class="fa-solid fa-heart fa-beat"></i> Copyright © Shaquib Hussain 2023.
+    </p>
+ </div>
+</div>
+
+ <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+   for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+   }
+   for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+  }
+ </script> 
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+function openmenu()
+{
+    sidemenu.style.right = "0";
+}
+function closemenu()
+{
+    sidemenu.style.right = "-200px";
+}
+</script>
+<!-- -------------------------script for signup form-------------------- -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6fxu1rtIRh9ABnSH8gzZmM0XQ0yRu9ANxYndZ7Gu4yEZDn7F-5Kf0z2s-sPsjdCnxCQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    // this is for success message
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Submitted successfully! :)"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
